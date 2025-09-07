@@ -1,118 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PinAI Studio — Privacy Policy | Rokhub</title>
-  <meta name="description" content="Privacy Policy for PinAI Studio by Rokhub." />
-  <meta name="robots" content="index,follow" />
-  <style>
-    :root { --bg:#0b0c10; --card:#111217; --text:#eaf0f6; --muted:#b8c3cf; --accent:#7cc2ff; }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;}
-    .wrap{max-width:860px;margin:40px auto;padding:0 20px;}
-    .card{background:var(--card);border:1px solid #1f2330;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);padding:28px;}
-    h1{margin:.2em 0 .4em;font-size:2rem}
-    h2{margin:2em 0 .6em;font-size:1.25rem}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .muted{color:var(--muted)}
-    ul{padding-left:1.2rem}
-    code{background:#1b1f2a;padding:.1em .35em;border-radius:6px}
-    footer{margin:36px 0;color:var(--muted);font-size:.9rem}
-    .brand{display:flex;gap:.6rem;align-items:center}
-    .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#7cc2ff,#b06dfd);}
-    .pill{display:inline-block;background:#162033;border:1px solid #22304a;border-radius:999px;padding:.15rem .6rem;margin-left:.4rem;font-size:.8rem;color:#a7b6cc}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms of Service - RokHub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <!-- Structured data for a privacy policy page -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "PinAI Studio — Privacy Policy",
-    "url": "https://YOUR_USERNAME.github.io/policy.html",
-    "about": {
-      "@type": "SoftwareApplication",
-      "name": "PinAI Studio",
-      "applicationCategory": "CreativeApplication"
-    },
-    "publisher": { "@type": "Organization", "name": "Rokhub" }
-  }
-  </script>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .back-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #764ba2;
+        }
+
+        /* Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .content-section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-icon {
+            font-size: 2rem;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2rem;
+            padding: 0.5rem 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #444;
+            margin: 2rem 0 1rem;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #555;
+            margin: 1.5rem 0 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .contact-box {
+            background: #667eea;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border: 1px solid #e9ecef;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .toc a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #667eea;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="card">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div><strong>PinAI Studio</strong> <span class="pill">by Rokhub</span></div>
-      </div>
-      <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: 08 September 2025</p>
+    <header>
+        <nav class="container">
+            <div class="logo">RokHub</div>
+            <a href="index.html" class="back-link">
+                ← Back to Home
+            </a>
+        </nav>
+    </header>
 
-      <p>PinAI Studio (“<strong>we</strong>”, “<strong>our</strong>”, “<strong>us</strong>”) is a SaaS tool that helps users generate AI images and publish them to their own Pinterest accounts. This policy explains what we collect, how we use it, and your choices.</p>
+    <main>
+        <div class="container">
+            <div class="toc">
+                <h3>📋 Table of Contents</h3>
+                <ul>
+                    <li><a href="#privacy-policy">🔒 Privacy Policy</a></li>
+                    <li><a href="#terms">📜 Terms of Service</a></li>
+                    <li><a href="#contact">📧 Contact Information</a></li>
+                </ul>
+            </div>
 
-      <h2>1) Information We Collect</h2>
-      <ul>
-        <li><strong>Account & OAuth Data:</strong> When you connect Pinterest, we receive an access token and allowed scopes (e.g., <code>pins:write</code>, <code>boards:read</code>). We never receive your Pinterest password.</li>
-        <li><strong>Content You Create:</strong> Prompts, settings, and the AI images you choose to generate and/or upload.</li>
-        <li><strong>Usage & Device Data:</strong> Basic diagnostics (pages used, timestamps, rough device/browser info) to improve reliability.</li>
-        <li><strong>Support Info:</strong> Messages or email you send us.</li>
-      </ul>
+            <section id="privacy-policy" class="content-section">
+                <h1 class="section-title">
+                    <span class="section-icon">🔒</span>
+                    Privacy Policy
+                </h1>
+                <p class="last-updated"><strong>Last updated:</strong> September 7, 2025</p>
 
-      <h2>2) How We Use Information</h2>
-      <ul>
-        <li>To let you create, preview, and publish pins to your Pinterest boards.</li>
-        <li>To operate, maintain, and improve the service (including safety/abuse prevention).</li>
-        <li>To provide support and communicate important updates.</li>
-      </ul>
+                <div class="highlight">
+                    <p><strong>RokHub</strong> and our application "<strong>PinAI Studio</strong>" are committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information when you use our services.</p>
+                </div>
 
-      <h2>3) Data Sharing</h2>
-      <ul>
-        <li>We do <strong>not</strong> sell your data.</li>
-        <li>We share data only with subprocessors necessary to run the app (e.g., cloud hosting, analytics) under confidentiality and data-processing terms.</li>
-        <li>We may disclose if required by law or to protect our rights and users.</li>
-      </ul>
+                <h2>1. Information We Collect</h2>
+                <p>We collect the following types of information:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, username, and profile information when you create an account</li>
+                    <li><strong>Pinterest Integration Data:</strong> Pinterest account information and access tokens (only after you explicitly grant permission through Pinterest's OAuth system)</li>
+                    <li><strong>Generated Content:</strong> AI-generated images, eBooks, cliparts, SVGs, and related metadata that you create using our platform</li>
+                    <li><strong>Usage Analytics:</strong> Basic usage statistics and performance metrics to improve our service quality</li>
+                    <li><strong>Technical Data:</strong> IP address, browser type, device information, and access logs for security and functionality purposes</li>
+                </ul>
 
-      <h2>4) Tokens & Security</h2>
-      <ul>
-        <li>OAuth tokens are stored securely (encrypted at rest) and scoped to the minimum required.</li>
-        <li>You can revoke access anytime in your Pinterest settings; our app will stop working until reconnected.</li>
-        <li>We use HTTPS everywhere and restrict internal access on a need-to-know basis.</li>
-      </ul>
+                <h2>2. How We Use Your Information</h2>
+                <p>We use your information exclusively for the following purposes:</p>
+                <ul>
+                    <li><strong>Service Provision:</strong> To provide and operate PinAI Studio, including content generation and Pinterest publishing features</li>
+                    <li><strong>Pinterest Integration:</strong> To create, schedule, and publish pins on your Pinterest account as per your instructions</li>
+                    <li><strong>Account Management:</strong> To manage your user account, authentication, and access to platform features</li>
+                    <li><strong>Service Improvement:</strong> To analyze usage patterns and improve app performance, features, and user experience</li>
+                    <li><strong>Customer Support:</strong> To respond to your inquiries, provide technical support, and resolve issues</li>
+                    <li><strong>Security:</strong> To detect, prevent, and address technical issues, security threats, and fraudulent activities</li>
+                </ul>
 
-      <h2>5) Data Retention</h2>
-      <ul>
-        <li>AI images, prompts, and logs are retained only as long as needed to provide the service or as required by law.</li>
-        <li>Upon account disconnect or deletion request, associated tokens are promptly invalidated and scheduled for removal from our systems.</li>
-      </ul>
+                <h2>3. Data Sharing and Disclosure</h2>
+                <div class="highlight">
+                    <p><strong>We do NOT sell, rent, or share your personal data with third parties for commercial purposes.</strong></p>
+                </div>
+                <p>We may share your information only in the following limited circumstances:</p>
+                <ul>
+                    <li><strong>Pinterest API:</strong> Your Pinterest access tokens are used solely to perform actions you authorize on your Pinterest account</li>
+                    <li><strong>AI Service Providers:</strong> Content you submit for generation is processed by our AI partners (with appropriate data protection agreements)</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, court order, or to protect our legal rights and safety</li>
+                    <li><strong>Service Providers:</strong> With trusted third-party service providers who assist in operating our platform (under strict confidentiality agreements)</li>
+                </ul>
 
-      <h2>6) Your Rights & Choices</h2>
-      <ul>
-        <li><strong>Access/Correction/Deletion:</strong> Contact us to request a copy, correction, or deletion of your data.</li>
-        <li><strong>Revoke Pinterest Access:</strong> Manage connected apps in Pinterest to immediately disable our access.</li>
-        <li><strong>Opt-out:</strong> You may opt out of non-essential analytics by contacting us.</li>
-      </ul>
+                <h2>4. Data Security</h2>
+                <p>We implement industry-standard security measures to protect your information:</p>
+                <ul>
+                    <li><strong>Encryption:</strong> All data transmission is encrypted using TLS/SSL protocols</li>
+                    <li><strong>Secure Storage:</strong> Data is stored in secure, encrypted databases with restricted access</li>
+                    <li><strong>Access Controls:</strong> Role-based access controls ensure only authorized personnel can access user data</li>
+                    <li><strong>Regular Audits:</strong> We conduct regular security assessments and updates to maintain protection standards</li>
+                </ul>
 
-      <h2>7) International Users & Legal Bases</h2>
-      <p>If you are in the EEA/UK, we process personal data under GDPR legal bases such as contract (to provide the service) and legitimate interests (to secure and improve the service). You may lodge a complaint with your local authority.</p>
+                <h2>5. Data Retention</h2>
+                <p>We retain your information for as long as necessary to provide our services and comply with legal obligations:</p>
+                <ul>
+                    <li><strong>Account Data:</strong> Retained while your account is active or as needed to provide services</li>
+                    <li><strong>Generated Content:</strong> Stored until you choose to delete it from your library</li>
+                    <li><strong>Analytics Data:</strong> Aggregated and anonymized data may be retained for service improvement</li>
+                </ul>
 
-      <h2>8) Children’s Privacy</h2>
-      <p>PinAI Studio is not directed to children under 13 (or the age of digital consent where you live). We do not knowingly collect such data.</p>
+                <h2>6. Your Rights and Control</h2>
+                <p>You have the following rights regarding your personal data:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+                    <li><strong>Correction:</strong> Update or correct inaccurate personal information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your personal data (subject to legal requirements)</li>
+                    <li><strong>Pinterest Access:</strong> Revoke Pinterest API access at any time through your Pinterest account settings</li>
+                    <li><strong>Account Closure:</strong> Delete your account and associated data by contacting us</li>
+                    <li><strong>Data Portability:</strong> Request your data in a portable format where technically feasible</li>
+                </ul>
 
-      <h2>9) Changes to This Policy</h2>
-      <p>We may update this policy; the “Last updated” date will change. Material changes will be notified in-app or by email.</p>
+                <h2>7. Cookies and Tracking</h2>
+                <p>We use minimal cookies and tracking technologies:</p>
+                <ul>
+                    <li><strong>Essential Cookies:</strong> Required for authentication and core functionality</li>
+                    <li><strong>Analytics:</strong> Basic usage analytics to improve our service (anonymized where possible)</li>
+                    <li><strong>No Third-Party Tracking:</strong> We do not use third-party advertising or tracking networks</li>
+                </ul>
 
-      <h2>10) Contact Us</h2>
-      <p>Email: <a href="mailto:privacy@rokhub.shop">privacy@rokhub.shop</a><br>
-         Company: <strong>Rokhub</strong><br>
-         Address: Siliguri, India<br>
-         Phone: +91 9800 881 300</p>
-    </div>
+                <h2>8. International Data Transfers</h2>
+                <p>Your data may be processed and stored in countries other than your own. We ensure appropriate safeguards are in place for any international data transfers, including adherence to data protection frameworks like GDPR adequacy decisions or standard contractual clauses.</p>
+
+                <h2>9. Children's Privacy</h2>
+                <p>Our service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+
+                <h2>10. Changes to Privacy Policy</h2>
+                <p>We may update this privacy policy from time to time. We will notify users of any significant changes by:</p>
+                <ul>
+                    <li>Posting the updated policy on our website</li>
+                    <li>Sending email notifications for material changes</li>
+                    <li>Updating the "Last Modified" date at the top of this policy</li>
+                </ul>
+            </section>
+
+            <section id="terms" class="content-section">
+                <h1 class="section-title">
+                    <span class="section-icon">📜</span>
+                    Terms of Service
+                </h1>
+                <p class="last-updated"><strong>Last updated:</strong> September 7, 2025</p>
+
+                <div class="highlight">
+                    <p>By using "<strong>PinAI Studio</strong>" and RokHub services, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully before using our platform.</p>
+                </div>
+
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing, downloading, installing, or using PinAI Studio, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these terms, you may not use our service.</p>
+
+                <h2>2. Description of Service</h2>
+                <p>PinAI Studio is a cloud-based platform that provides:</p>
+                <ul>
+                    <li>AI-powered content generation (eBooks, cliparts, SVGs)</li>
+                    <li>Pinterest integration for publishing and scheduling</li>
+                    <li>SEO optimization tools</li>
+                    <li>Cloud storage for generated content</li>
+                    <li>Content management and organization features</li>
+                </ul>
+
+                <h2>3. User Eligibility and Account Requirements</h2>
+                <p>To use our service, you must:</p>
+                <ul>
+                    <li>Be at least 13 years of age (or the minimum age in your jurisdiction)</li>
+                    <li>Have the legal capacity to enter into binding agreements</li>
+                    <li>Provide accurate and complete account information</li>
+                    <li>Maintain the security and confidentiality of your account credentials</li>
+                    <li>Accept responsibility for all activities under your account</li>
+                </ul>
+
+                <h2>4. Permitted Use of Service</h2>
+                <p>You may use PinAI Studio to:</p>
+                <ul>
+                    <li>Generate content that you own or have the legal right to create</li>
+                    <li>Publish content to your own Pinterest account</li>
+                    <li>Use generated content for personal, educational, or commercial purposes (subject to content guidelines)</li>
+                    <li>Store and organize your generated content in our cloud platform</li>
+                </ul>
+
+                <h2>5. Prohibited Uses</h2>
+                <p>You agree NOT to use our service for:</p>
+                <ul>
+                    <li><strong>Spam or Abuse:</strong> Bulk posting, spamming, or automated actions that violate Pinterest's Terms of Service</li>
+                    <li><strong>Illegal Content:</strong> Creating or distributing content that violates applicable laws</li>
+                    <li><strong>Intellectual Property Infringement:</strong> Generating content that infringes on copyrights, trademarks, or other intellectual property rights</li>
+                    <li><strong>Harmful Content:</strong> Creating content that is defamatory, harassing, threatening, or promotes violence</li>
+                    <li><strong>Adult Content:</strong> Generating sexually explicit or adult content</li>
+                    <li><strong>Fraudulent Activities:</strong> Using the service for deceptive or fraudulent purposes</li>
+                    <li><strong>System Abuse:</strong> Attempting to bypass quotas, hack, or compromise our platform security</li>
+                    <li><strong>Resale:</strong> Reselling or redistributing our service without authorization</li>
+                </ul>
+
+                <h2>6. Pinterest Integration</h2>
+                <p>When using Pinterest integration features:</p>
+                <ul>
+                    <li>You must comply with Pinterest's Terms of Service and Community Guidelines</li>
+                    <li>You are responsible for all content published to your Pinterest account through our platform</li>
+                    <li>We act only as a tool to facilitate your publishing activities</li>
+                    <li>You may revoke Pinterest access at any time through your Pinterest account settings</li>
+                </ul>
+
+                <h2>7. Content Ownership and Rights</h2>
+                <h3>Your Content</h3>
+                <ul>
+                    <li>You retain ownership of content you create using our AI tools</li>
+                    <li>You are responsible for ensuring you have rights to any input materials you provide</li>
+                    <li>You grant us a limited license to process and store your content for service provision</li>
+                </ul>
+                <h3>Generated Content</h3>
+                <ul>
+                    <li>AI-generated content created through our platform is yours to use</li>
+                    <li>However, AI-generated content may not be subject to copyright protection in some jurisdictions</li>
+                    <li>You are responsible for verifying the originality and legal use of generated content</li>
+                    <li>We do not guarantee that generated content is free from third-party rights</li>
+                </ul>
+
+                <h2>8. Service Availability and Limitations</h2>
+                <h3>Service Availability</h3>
+                <ul>
+                    <li>We strive for 99.9% uptime but do not guarantee uninterrupted service availability</li>
+                    <li>Planned maintenance will be announced in advance when possible</li>
+                    <li>We reserve the right to modify, suspend, or discontinue features with reasonable notice</li>
+                </ul>
+                <h3>Usage Quotas</h3>
+                <ul>
+                    <li>Your account may be subject to usage quotas (generation limits, storage limits, API calls)</li>
+                    <li>Quotas are determined by your subscription plan and may change with notice</li>
+                    <li>Exceeding quotas may result in temporary service restrictions</li>
+                </ul>
+
+                <h2>9. Payment Terms and Subscriptions</h2>
+                <ul>
+                    <li><strong>Billing:</strong> Subscription fees are billed in advance on a recurring basis</li>
+                    <li><strong>Payment Methods:</strong> We accept major credit cards and other payment methods as available</li>
+                    <li><strong>Refunds:</strong> Refund policies vary by subscription type and will be clearly stated at purchase</li>
+                    <li><strong>Price Changes:</strong> We may change subscription prices with 30 days advance notice</li>
+                    <li><strong>Cancellation:</strong> You may cancel your subscription at any time through your account settings</li>
+                </ul>
+
+                <h2>10. Privacy and Data Protection</h2>
+                <p>Your privacy is important to us. Our data handling practices are governed by our Privacy Policy, which is incorporated by reference into these Terms. Key points include:</p>
+                <ul>
+                    <li>We do not sell or share your personal data with third parties for commercial purposes</li>
+                    <li>Your Pinterest access tokens are used only for authorized actions</li>
+                    <li>Generated content is stored securely and remains under your control</li>
+                    <li>You may request data deletion at any time</li>
+                </ul>
+
+                <h2>11. Disclaimer of Warranties</h2>
+                <div class="highlight">
+                    <p><strong>IMPORTANT:</strong> Our service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind.</p>
+                </div>
+                <p>We explicitly disclaim:</p>
+                <ul>
+                    <li><strong>Accuracy:</strong> We do not guarantee the accuracy, completeness, or quality of AI-generated content</li>
+                    <li><strong>Availability:</strong> We do not warrant uninterrupted or error-free service operation</li>
+                    <li><strong>Compatibility:</strong> We do not guarantee compatibility with all devices, browsers, or third-party services</li>
+                    <li><strong>Results:</strong> We do not guarantee specific outcomes or results from using our platform</li>
+                </ul>
+
+                <h2>12. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by law:</p>
+                <ul>
+                    <li><strong>No Consequential Damages:</strong> We are not liable for indirect, incidental, special, or consequential damages</li>
+                    <li><strong>Damage Cap:</strong> Our total liability shall not exceed the amount you paid for the service in the 12 months prior to the claim</li>
+                    <li><strong>Third-Party Actions:</strong> We are not responsible for actions taken by Pinterest or other third-party platforms</li>
+                    <li><strong>Content Issues:</strong> We are not liable for copyright infringement or other legal issues arising from your use of generated content</li>
+                </ul>
+
+                <h2>13. Indemnification</h2>
+                <p>You agree to indemnify and hold harmless RokHub, its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from:</p>
+                <ul>
+                    <li>Your use of the service in violation of these Terms</li>
+                    <li>Your violation of any third-party rights, including intellectual property rights</li>
+                    <li>Content you create, publish, or distribute using our platform</li>
+                    <li>Your violation of applicable laws or regulations</li>
+                </ul>
+
+                <h2>14. Account Termination</h2>
+                <h3>Termination by You</h3>
+                <ul>
+                    <li>You may terminate your account at any time by contacting us</li>
+                    <li>Upon termination, your access to the service will cease</li>
+                    <li>You may request deletion of your data subject to our data retention policies</li>
+                </ul>
+                <h3>Termination by Us</h3>
+                <p>We may suspend or terminate your account if:</p>
+                <ul>
+                    <li>You violate these Terms of Service</li>
+                    <li>You engage in prohibited activities</li>
+                    <li>Your account remains inactive for an extended period</li>
+                    <li>We discontinue the service (with reasonable notice)</li>
+                </ul>
+
+                <h2>15. Modification of Terms</h2>
+                <p>We reserve the right to modify these Terms of Service at any time. Changes will be effective when:</p>
+                <ul>
+                    <li>Posted on our website with an updated "Last Modified" date</li>
+                    <li>Material changes will be communicated via email or in-app notification</li>
+                    <li>Continued use of the service after changes constitutes acceptance</li>
+                    <li>If you disagree with changes, you may terminate your account</li>
+                </ul>
+
+                <h2>16. Governing Law and Dispute Resolution</h2>
+                <ul>
+                    <li><strong>Governing Law:</strong> These Terms are governed by the laws of [Your Jurisdiction]</li>
+                    <li><strong>Dispute Resolution:</strong> Disputes will be resolved through binding arbitration when possible</li>
+                    <li><strong>Jurisdiction:</strong> Any legal proceedings shall be conducted in courts of competent jurisdiction</li>
+                    <li><strong>Class Action Waiver:</strong> You agree to resolve disputes individually, not as part of a class action</li>
+                </ul>
+
+                <h2>17. Severability and Entire Agreement</h2>
+                <ul>
+                    <li><strong>Severability:</strong> If any provision is found unenforceable, the remainder of these Terms remains in effect</li>
+                    <li><strong>Entire Agreement:</strong> These Terms, together with our Privacy Policy, constitute the entire agreement</li>
+                    <li><strong>No Waiver:</strong> Our failure to enforce any provision does not constitute a waiver of our rights</li>
+                </ul>
+
+                <h2>18. Force Majeure</h2>
+                <p>We shall not be liable for any failure or delay in performance due to circumstances beyond our reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, labor disputes, or government actions.</p>
+
+                <h2>19. Export Compliance</h2>
+                <p>You agree to comply with all applicable export laws and regulations. You may not use our service if you are located in a country subject to applicable trade embargoes or sanctions.</p>
+            </section>
+
+            <section id="contact" class="contact-box">
+                <h3>📧 Contact Us</h3>
+                <p>Questions about our Privacy Policy or Terms of Service?</p>
+                <p>We're here to help clarify any concerns.</p>
+                <a href="mailto:rokiroy2207@gmail.com">rokiroy2207@gmail.com</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">
+                    Response time: Within 24-48 hours
+                </p>
+            </section>
+        </div>
+    </main>
 
     <footer>
-      © <span id="y"></span> Rokhub • This page is provided for transparency and compliance with Pinterest API requirements.
+        <div class="container">
+            <p>&copy; 2025 RokHub. All rights reserved. | Building the future of AI-powered creativity.</p>
+        </div>
     </footer>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
